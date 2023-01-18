@@ -1,0 +1,58 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//BR" "https://www.w3.org/TR/xhtml/DTD/xhtml1-strict.dtd">
+
+<!-- Programa do arquivo 00_HelloWord.html -->
+
+<html xmln="http://www.w3.org/1999/xhtml">
+
+    <head>
+        <title>Condições em JavaScript</title>
+        <style type="text/css">
+            table{width: 100%}
+            th{text-align: left}
+        </style>
+        <script type="text/javascript">
+            <!--
+                var escolha;
+                var tagInicio;
+                var tagFinal;
+                var validaEntrada = true;
+                var tipoLista;
+
+                escolha = prompt("Selecione o style da lista:\n 1 (Numerico), 2 (Letra), 3 (Romano)", "1");
+
+                switch(escolha){
+                    case "1":
+                        tagInicio = "<ol>";
+                        tagFinal = "</ol>";
+                        tipoLista = "<h1>Lista Numérica</h1>";
+                        break;
+                    case "2": 
+                        tagInicio = "<ol style = \"list-style-type: upper-alpha\">";
+                        tagFinal = "</ol>";
+                        tipoLista = "<h1>Lista Letra</h1>";
+                        break;
+                    
+                    case "3": 
+                        tagInicio = "<ol style = \"list-style-type: upper-roman\">";
+                        tagFinal = "</ol>";
+                        tipoLista = "<h1>Lista Romana</h1>";
+                        break;
+                    default:
+                        validaEntrada = false;
+                }
+
+                if(validaEntrada == true){
+                    document.writeln(tipoLista + tagInicio);
+                    for(var i=1; i<=3; ++i)
+                        document.writeln("<li> List item "+i+ "</li>");
+                    document.writeln(tagFinal);
+                }
+                else
+                    document.writeln("Opção Invalida: "+escolha);
+            //--> 
+        </script>
+    </head><body>
+        <p>Click to refresh(or Reaload) for execute program</p>
+    </body>
+</html> 

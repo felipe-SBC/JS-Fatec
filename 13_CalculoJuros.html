@@ -1,0 +1,37 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//BR" "https://www.w3.org/TR/xhtml/DTD/xhtml1-strict.dtd">
+
+<!-- Programa do arquivo 00_HelloWord.html -->
+
+<html xmln="http://www.w3.org/1999/xhtml">
+
+    <head>
+        <title>Condições em JavaScript</title>
+        <style type="text/css">
+            table{width: 100%}
+            th{text-align: left}
+        </style>
+        <script type="text/javascript">
+            <!--
+                var total;
+                var principal = 1000.00;
+                var taxaJuros = 0.5;
+
+                document.writeln("<table border=\"1\">");
+                document.writeln("<caption>Calculo do Juros Composto</caption>");
+                document.writeln("<thead><tr><th>Ano</th>");
+                document.writeln("<th>Total</th>");
+                document.writeln("</th></thead><tbody>");
+
+                for(var ano=1; ano<=10; ++ano){
+                    total = principal * Math.pow(1.0 + taxaJuros, ano);
+                    document.writeln("<tr><td>" + ano + "</td><td>" + total.toFixed(2) + "</td></tr>");
+                }
+                document.writeln("</tbody></table>");
+
+            //--> 
+        </script>
+    </head><body>
+        <p>Click to refresh(or Reaload) for execute program</p>
+    </body>
+</html> 
