@@ -2,7 +2,7 @@ function testeVar() {
     var a = 1;
     var b = 2;
     var sum = a + b;
-    var name = "asd";
+    var name = "Felipe";
 
     if (name == undefined) {
         console.log("The name isn't started");
@@ -14,10 +14,12 @@ function testeVar() {
 }
 
 //testeVar()
-function Person() {
-    this.name = "João";
-    this.hello = function () {
-        return "Hello Word !!"
+class Person {
+    constructor() {
+        this.name = "João";
+        this.hello = function () {
+            return "Hello Word !!";
+        };
     }
 }
 

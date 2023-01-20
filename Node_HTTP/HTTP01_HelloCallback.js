@@ -11,7 +11,7 @@ var callback = function(request, response){
     response.end("Hello World Node!\n");
 };
 //Servidor HTTP
-var server = 'http'.createServer(callback);
+var server = http.createServer(callback);
 //Porta que o servidor irá escutar
 server.listen(5000);
 
