@@ -1,0 +1,26 @@
+[
+    {
+        "nome": "Felipe",
+        "idade": "18",
+        "altura": "1.77",
+        "pais": "Brasil"
+    },
+    {
+        "nome": "Luis Felipe",
+        "idade": "21",
+        "altura": "1.82",
+        "pais": "Brasil"
+    },
+    {
+        "nome": "Lucas 1",
+        "idade": "22",
+        "altura": "1.10",
+        "pais": "Brasil"
+    },
+    {
+        "nome": "Lucas Chaves",
+        "idade": "23",
+        "altura": "1.80",
+        "pais": "Brasil"
+    }
+]
