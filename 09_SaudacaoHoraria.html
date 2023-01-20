@@ -1,33 +1,35 @@
 <?xml version = "1.0" encoding = "utf-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//BR" "https://www.w3.org/TR/xhtml/DTD/xhtml1-strict.dtd">
 
-<!-- Programa do arquivo 00_HelloWord.html -->
+<!-- Programa do arquivo 09_SaudacaoHoraria.html -->
 
 <html xmln="http://www.w3.org/1999/xhtml">
-    <head>
-        <title>Condições em JavaScript</title>
-        <script type="text/javascript">
-            <!--
-                var name;
-                var now = new Date();
-                var hour = now.gethours();
 
-                name = prompt("Input your name");
+<head>
+    <title>Condições em JavaScript</title>
+    <script type="text/javascript">
+        <!--
+            
+            var name = prompt("Input your name");
+            var now = new Date();
+            var hour = now.getHours();
 
-                if(hour<12)
-                    document.writeln("<h1>Good Morning, ");
-                if(hour>=12){
-                        hour -= 12;
-                    if(hour<6)    
-                        document.writeln("<h1>Good Evening, ");
-                    if(hour>=6)
-                        document.writeln("<h1>Good Night, ");
-                }        
-                document.writeln(name+" welcome...</h1>");
-            //-->
-        </script>
-    </head>
-    <body>
-        <p>Click to refresh(or Reaload) for execute program</p>
-    </body>
-</html> 
+            if(hour<12){
+                document.writeln("<h1>Good Morning, ");
+            }else if(hour>=12){
+                    hour -= 12;
+                if(hour<6)    
+                    document.writeln("<h1>Good Evening, ");
+                if(hour>=6)
+                    document.writeln("<h1>Good Night, ");
+            }        
+            document.writeln(name+" welcome...</h1>");
+        -->
+    </script>
+</head>
+
+<body>
+    <p>Click to refresh(or Reaload) for execute program</p>
+</body>
+
+</html>
